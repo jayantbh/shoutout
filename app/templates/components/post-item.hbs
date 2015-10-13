@@ -7,7 +7,7 @@
         <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">About {{post.userFullName}}<i class="mdi-navigation-close right waves-effect"></i></span>
             <p>{{post.aboutUser}}</p>
-            <p>Email: {{post.newUser}}</p>
+            <p>Email: <a href="mailto:{{post.newUser}}?subject=Connecting%20through%20ShoutOut&amp;body=Hey%2C%20I'm%20%5Benter-name%5D%2C%20I%20saw%20your%20shout%20on%20shoutout%20and%20found%20it%20interesting%2C%20how%20about%20we%20get%20in%20touch%3F" target="_blank">{{post.newUser}}</a></p>
             <p>Born on: {{post.userDOB}}</p>
             <p>Gender: {{post.gender}}</p>
         </div>
