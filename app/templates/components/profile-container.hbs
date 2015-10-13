@@ -1,5 +1,5 @@
 {{#if hasUser}}
-	{{user-greeting user=userdata}}
+	{{user-greeting user=userdata message=message action='deleteUserData'}}
 {{else}}
 	{{user-input action='addUser'}}
 {{/if}}
