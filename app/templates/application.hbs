@@ -1,3 +1,12 @@
-<h2 id="title">Welcome to Ember</h2>
+<nav>
+    <div class="nav-wrapper">
+		{{#link-to 'index' class='brand-logo'}}ShoutOut!{{/link-to}}
+		<ul id="nav-mobile" class="right">
+			<li>{{#link-to 'profile'}}Profile{{/link-to}}</li>
+		</ul>
+	</div>
+</nav>
+<div class="container">{{outlet}}</div>
 
-{{outlet}}
+{{!-- ember-cli-materialize modal container --}}
+{{md-modal-container}}

@@ -1,0 +1,5 @@
+{{#if hasUser}}
+	{{user-greeting user=userdata}}
+{{else}}
+	{{user-input action='addUser'}}
+{{/if}}

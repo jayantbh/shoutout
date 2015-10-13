@@ -1,0 +1,20 @@
+<div class="row">
+    <form class="col s10 offset-s1" {{action 'submitUser' on='submit'}}>
+        <h4>You need to fill up some basic info about yourself before you can begin to add or view posts.</h4>
+		<h6>You can keep whatever you want blank, but, that kinda beats the purpose. Anyway, upto you.</h6>
+        <div class="row">
+			{{md-input value=newUser label='Your email' class='col s12' icon='mdi-communication-email teal-text'}}
+			{{md-input value=userFullName label='Your full name' class='col s12' icon='mdi-action-account-circle teal-text'}}
+			<div class="input-field col s12" style="height: 3rem;"><i class="prefix mdi-social-people teal-text"></i><span style="margin-left: 42px; line-height: 3rem;">Select gender:</span></div>
+			<div class="radios" style="margin-left: 3rem;">
+				{{#md-radios selection=gender optionValuePath='id' optionLabelPath='text'}}
+                    <p>{{md-radio value='Male' name='Male'}}</p>
+                    <p>{{md-radio value='Female' name='Female'}}</p>
+				{{/md-radios}}
+			</div>
+			{{md-input-date value=userDOB label='Date of birth' class='col s12' icon='mdi-action-today teal-text' max=today numberOfYears=100}}
+			{{md-input value=aboutUser label='Describe yourself' icon='mdi-action-stars teal-text' class='col s12'}}
+			{{md-btn-submit icon='mdi-content-send' iconPosition='right' text='Submit' class='col s12'}}
+        </div>
+    </form>
+</div>

@@ -1,0 +1,17 @@
+<div class="row">
+    <form class="col s12 m6 offset-m3" {{action 'submitPost' on='submit'}}>
+        <div class="row">
+            <div class="input-field col s12">
+				{{input id='new-post-title' type='text' value=postTitle}}
+                <label for="new-post-title">Post Title</label>
+			</div>
+            <div class="input-field col s12">
+				{{textarea id='new-post-body' class='materialize-textarea' value=postBody}}
+                <label for="new-post-body">Post Body</label>
+			</div>
+            <div class="input-field col s12">
+                <button class="btn">Shout!<i class="mdi-content-send right"></i></button>
+            </div>
+        </div>
+    </form>
+</div>

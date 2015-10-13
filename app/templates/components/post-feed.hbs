@@ -1,0 +1,8 @@
+<ul>
+	{{#each posts as |post|}}
+        <li>
+            {{post-item post=post}}
+        </li>
+	{{/each}}
+</ul>
+{{yield}}

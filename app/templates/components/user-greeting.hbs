@@ -1,0 +1,26 @@
+<h4>Welcome {{newUser}}{{user.userFullName}}!</h4>
+
+<h5>This is the information you entered:</h5>
+<table>
+    <tr>
+        <td>Name:</td>
+        <td>{{user.userFullName}}</td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td>{{user.newUser}}</td>
+    </tr>
+    <tr>
+        <td>Gender:</td>
+        <td>{{user.gender}}</td>
+    </tr>
+    <tr>
+        <td>D.O.B.:</td>
+        <td>{{user.userDOB}}</td>
+    </tr>
+    <tr>
+        <td>About me:</td>
+        <td>{{user.aboutUser}}</td>
+    </tr>
+</table>
+{{yield}}
