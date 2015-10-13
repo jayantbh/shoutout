@@ -7,5 +7,10 @@ export default DS.Model.extend({
 	gender: DS.attr('string'),
 	newUser: DS.attr('string'),
 	aboutUser: DS.attr('string'),
-	userDOB: DS.attr('string')
+	userDOB: DS.attr('string'),
+	postTime: DS.attr('number',{
+		defaultValue: function () {
+			return new Date().getTime()*(-1);
+		}
+	})
 });

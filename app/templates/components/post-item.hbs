@@ -1,15 +1,16 @@
 <div class="col s12">
-	<div class="card">
-		<div class="card-content">
-			<span class="card-title grey-text text-darken-4 activator">{{post.title}}<i class="mdi-navigation-more-vert right waves-effect"></i></span>
-			<p>{{post.body}}</p>
-		</div>
-		<div class="card-reveal">
-			<span class="card-title grey-text text-darken-4">About {{post.userFullName}}</span>
-			<p>{{post.aboutUser}}</p>
-			<p>Email: {{post.newUser}}</p>
-			<p>Born on: {{post.userDOB}}</p>
-			<p>Gender: {{post.gender}}</p>
-		</div>
-	</div>
+    <div class="card" style="min-height: 240px;">
+        <div class="card-content">
+            <span class="card-title grey-text text-darken-4 activator">{{post.title}}<i class="mdi-navigation-more-vert right waves-effect"></i></span>
+            <p class="flow-text">{{post.body}}</p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">About {{post.userFullName}}<i class="mdi-navigation-close right waves-effect"></i></span>
+            <p>{{post.aboutUser}}</p>
+            <p>Email: {{post.newUser}}</p>
+            <p>Born on: {{post.userDOB}}</p>
+            <p>Gender: {{post.gender}}</p>
+        </div>
+    </div>
+    <span style="display: none;" class="post-time">{{post.postTime}}</span>
 </div>

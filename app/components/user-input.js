@@ -12,7 +12,7 @@ export default Ember.Component.extend({
 		Ember.run.schedule('afterRender',this, function () {
 			Ember.$('input').removeClass('valid');
 			//console.log("After Render");
-		})
+		});
 	},
 	actions: {
 		genderCheck: function () {

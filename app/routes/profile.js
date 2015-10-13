@@ -20,6 +20,9 @@ export default Ember.Route.extend({
 			//		console.log("nothing here")
 			//	}
 			//);
+		},
+		redirect: function () {
+			this.transitionTo('index');
 		}
 	}
 });

@@ -12,7 +12,7 @@ export default Ember.Route.extend({
 		}
 	},
 	model(){
-		return this.store.findAll('post-item');
+		return this.store.query('post-item',{orderBy:'postTime', async: true});
 	},
 	actions: {
 		addPost(title,body){
