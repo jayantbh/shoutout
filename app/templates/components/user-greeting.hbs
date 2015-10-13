@@ -1,5 +1,10 @@
 <h4>Welcome {{newUser}}{{user.userFullName}}!</h4>
-
+{{#if message}}
+    <br/>
+	<h5>{{message}}</h5>
+    <br/>
+{{/if}}
+<blockquote>Editing isn't supported yet, so to make changes, you have to delete the profile and re-enter data.</blockquote>
 <h5>This is the information you entered:</h5>
 <table>
     <tr>
@@ -23,4 +28,5 @@
         <td>{{user.aboutUser}}</td>
     </tr>
 </table>
+<button class="btn waves-effect" {{action 'deleteUserData'}}>Delete saved profile <i class="mdi-action-delete right"></i></button>
 {{yield}}

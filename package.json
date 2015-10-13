@@ -1,7 +1,7 @@
 {
   "name": "shoutout",
-  "version": "0.0.0",
-  "description": "Small description for shoutout goes here",
+  "version": "0.3.1",
+  "description": "People finding system based on geolocation tagged posts.",
   "private": true,
   "directories": {
     "doc": "doc",
