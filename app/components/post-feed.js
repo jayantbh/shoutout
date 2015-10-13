@@ -14,6 +14,9 @@ export default Ember.Component.extend({
 			$(".post-feed").prepend(lastPost);
 			lastPost.slideDown(500);
 		}
+		$(document).ready(function(){
+			$('.tooltipped').tooltip({delay: 50});
+		});
 		//console.log(this.get('posts'))
 		//var l = this.get('posts').get('content').get('length');
 		//console.log(l)
