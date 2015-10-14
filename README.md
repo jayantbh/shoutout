@@ -16,6 +16,7 @@ A tutorial for this app can be found on this site.
 
 The app uses ember-cli to generate a default ember app, along with emberfire as an ember-data data-store adapter and materialize css framework for some basic styling.  
 There are two major routes:  
+
 1. index route - path: '/'
 2. profile route - path: '/profile'  
 
